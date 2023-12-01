@@ -9,6 +9,7 @@ app.use((req, res, next) => {
     next();
   });
 app.set('view engine', 'ejs');
+app.use(express.static("public"));
 app.use(express.static(__dirname + '/views'));
 
 app.use(bodyParser.json())

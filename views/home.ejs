@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vimeo Upload</title>
+  <link id="icon" rel="icon" href="i-camp-logo-jpg.jpg" type="image/jpeg">
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
@@ -14,7 +15,6 @@
   </div>
   <div id="container">
     <div id="sub-container">
-      <h2 id="heading">Upload Video</h2>
       <div id="uploadForm" enctype="multipart/form-data">
         <div>
           <input type="file" id="videoFile" accept="video/*" required />
@@ -26,10 +26,10 @@
         <div>
           <textarea id="myTextarea" placeholder="Enter Description"></textarea>
         </div>
-        <div id="date-div">
+        <div id="date-div"></div>
           <input type="date" id="date" />
         </div>
-        <button type="button" onclick="StoreInDB()">Submit</button>
+        <button class="submit-button" type="button" onclick="StoreInDB()">Submit</button>
       </div>
     </div>
   </div>
