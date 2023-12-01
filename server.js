@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const vimeoRoute=require('./routes/vimeoRoute')
 require('./models/db')
-require('dotenv').config();
+require('dotenv').config(); 
 const app = express()
 app.use((req, res, next) => {
     res.locals.env = process.env;
